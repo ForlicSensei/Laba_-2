@@ -11,6 +11,6 @@ public class Lab1 {
         Point3d b= new Point3d(in.nextDouble(),in.nextDouble(),in.nextDouble());
         Point3d z= new Point3d(in.nextDouble(),in.nextDouble(),in.nextDouble());
         /**Вывод площади **/
-        System.out.printf("%.3f",Point3d.computeArea(a,b,z));
+        System.out.println(Point3d.computeArea(a,b,z));
     }
 }
