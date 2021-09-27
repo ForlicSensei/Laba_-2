@@ -71,11 +71,12 @@ public class Point3d {
         Point3d dot = (Point3d) obj;
         return zCoord==dot.zCoord;
     }
-
+    /**Расчет дистанции до точки **/
     public double distanceTo(Point3d obj){
         Point3d dot = (Point3d) obj;
         return Math.sqrt(Math.pow(dot.xCoord-xCoord,2)+Math.pow(dot.yCoord-yCoord,2)+Math.pow(dot.zCoord-zCoord,2));
     }
+    /**Статический метод для расчета площади **/
     public static double computeArea(Point3d x,Point3d y,Point3d z){
         Point3d a=(Point3d) x;
         Point3d b=(Point3d) y;
